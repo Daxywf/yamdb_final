@@ -62,7 +62,7 @@ class AccessTokenView(APIView):
             )
         return Response(self.get_token(user), status=status.HTTP_200_OK)
 
-    def get_token(user):
+    def get_token(self, user):
         return {
             'token': str(AccessToken.for_user(user))
         }

@@ -1,4 +1,5 @@
 # api_yamdb
+![example workflow](https://github.com/Daxywf/yamdb_final/actions/workflows/main.yml/badge.svg)
 REST api для проекта YaMDb - базы с отзывами о различных произведениях.
 
 ## Описание

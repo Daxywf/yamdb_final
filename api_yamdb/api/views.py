@@ -3,11 +3,11 @@ from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, viewsets
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-
 from reviews.models import Comment, Review
 from titles.models import Category, Genre, Title
 from users.permissions import (IsAdminOrReadOnly,
                                IsAuthorModeratorAdminOrReadOnly)
+
 from .filters import TitleFilter
 from .mixins import LCDMixin
 from .serializers import (CategorySerializer, CommentSerializer,
@@ -95,8 +95,7 @@ class CommentsViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         review_id = self.kwargs.get('review_id')
         review = get_object_or_404(Review, pk=review_id)
-        comments = Comment.objects.filter(review=review)
-        return comments
+        return Comment.objects.filter(review=review)
 
     def perform_create(self, serializer):
         review = get_object_or_404(Review, id=self.kwargs.get('review_id'))
