@@ -7,7 +7,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: daxywf/yamdb_final:latest
+    image: daxywf/yamdb_final
     restart: always
     volumes:
       - static_value:/app/static/
