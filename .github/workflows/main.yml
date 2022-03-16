@@ -47,7 +47,8 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Push to Docker Hub
         # Пуш образа в Docker Hub 
-        context: api_yamdb 
+        uses: docker/build-push-action@v2
+          context: api_yamdb 
         with:
           file: api_yamdb/Dockerfile
           push: true
@@ -74,9 +75,7 @@ jobs:
             echo POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} >> .env
             echo DB_HOST=${{ secrets.DB_HOST }} >> .env
             echo DB_PORT=${{ secrets.DB_PORT }} >> .env
-            sudo docker-compose run web bash
-            ls
-            pwd
+            sudo docker run --rm daxywf/yamdb_final
 
 
   send_message:
