@@ -1,6 +1,6 @@
 # api_yamdb
 REST api для проекта YaMDb - базы с отзывами о различных произведениях.
-
+Проект развёрнут [здесь](84.201.162.31)
 Состояние CI & CD: ![example workflow](https://github.com/Daxywf/yamdb_final/actions/workflows/main.yml/badge.svg)
 
 ## Описание
@@ -18,15 +18,29 @@ REST api для проекта YaMDb - базы с отзывами о разл�
 ## Как запустить проект (docker)
 - Скачать docker с [официального сайта](https://www.docker.com/products/docker-desktop) и установить его.
 - Клонировать репозиторий с проектом и перейти в него 
-```git clone https://github.com/Daxywf/infra_sp2``` ```cd infra_sp2```
+```bash
+git clone https://github.com/Daxywf/infra_sp2
+```
+```bash
+cd yamdb_final
+```
 - Запустить docker-compose из соответствующей директории
-```cd infra ``` ```docker-compose up```
+```bash
+cd infra 
+```
+```
+docker-compose up
+```
 
 При первом запуске
 - Выполнить миграции
-```docker-compose exec web python manage.py migrate```
+```bash
+docker-compose exec web python manage.py migrate
+```
 - При желании загрузить в базу демо-данные
-```docker-compose exec web python manage.py loaddata fixtures.json```
+```bash
+docker-compose exec web python manage.py loaddata fixtures.json
+```
 
 ## Участники
 
