@@ -1,4 +1,4 @@
-name: CI и CD для проекта YaMDb (tests)
+name: CI и CD для проекта YaMDb
 
 on:
   [push]
