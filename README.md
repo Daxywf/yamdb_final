@@ -3,7 +3,7 @@ REST api для проекта YaMDb - базы с отзывами о разл�
 
 Проект развёрнут [здесь](http://84.201.162.31/)
 
-Состояние CI & CD: ![example workflow](https://github.com/Daxywf/yamdb_final/actions/workflows/main.yml/badge.svg)
+Состояние CI & CD: ![example workflow](https://github.com/Daxywf/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ## Описание
 Позволяет работать со следующими объектами:
