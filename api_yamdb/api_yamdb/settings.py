@@ -68,7 +68,6 @@ DATABASES = {
     }
 }
 '''
- 
         'PORT': os.getenv('DB_PORT', default='5432')
 DATABASES = {
     'default': {
