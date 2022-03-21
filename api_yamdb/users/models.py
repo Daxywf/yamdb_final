@@ -33,7 +33,8 @@ class User(AbstractUser):
     email = models.EmailField(
         verbose_name='Электронная почта',
         blank=False,
-        unique=True)
+        unique=True
+    )
 
     username = models.CharField(
         verbose_name='Имя пользователя',
