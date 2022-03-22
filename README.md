@@ -1,7 +1,7 @@
 # api_yamdb
 REST api для проекта YaMDb - базы с отзывами о различных произведениях.
 
-Проект развёрнут [здесь](http://84.201.162.31/)
+Проект развёрнут [здесь](http://51.250.29.193/)
 
 Состояние CI & CD: ![example workflow](https://github.com/Daxywf/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
